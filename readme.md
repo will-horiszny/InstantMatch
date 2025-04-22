@@ -15,7 +15,7 @@ Automate the UTD Student Organizations Match Card using LLMs!
 
 Follow these steps to set up and run the project:
 
-1.  **Clone the Repository (if applicable)**
+1.  **Clone the Repository**
     ```bash
     git clone <your-repository-url>
     cd <repository-directory>
@@ -33,7 +33,6 @@ Follow these steps to set up and run the project:
     *   **Enable APIs:** Ensure the following APIs are enabled for your project:
         *   Google Forms API
         *   Gmail API
-        *   (Potentially others depending on your specific implementation, like Google Drive API if `token.json` storage needs it)
     *   **Configure OAuth Consent Screen:**
         *   Navigate to "APIs & Services" -> "OAuth consent screen".
         *   Choose "External" (unless all users are within your Google Workspace org).
@@ -62,22 +61,7 @@ Follow these steps to set up and run the project:
     ```
 
 5.  **Configure Gemini API Key**
-    *   You need to provide your Gemini API Key to the application. It's recommended to use environment variables for sensitive keys.
-    *   Set an environment variable named `GEMINI_API_KEY`:
-        *   **Linux/macOS:**
-            ```bash
-            export GEMINI_API_KEY='YOUR_GEMINI_API_KEY_HERE'
-            ```
-        *   **Windows (Command Prompt):**
-            ```bash
-            set GEMINI_API_KEY=YOUR_GEMINI_API_KEY_HERE
-            ```
-        *   **Windows (PowerShell):**
-            ```powershell
-            $env:GEMINI_API_KEY='YOUR_GEMINI_API_KEY_HERE'
-            ```
-    *   Alternatively, check the project's code (e.g., look for `os.getenv('GEMINI_API_KEY')` or similar) to see how it expects the key. It might load from a `.env` file or a specific configuration file. **Do not hardcode the key directly in the source code.**
-
+    *   You need to provide your Gemini API Key to the application. For now, the application just reads from a file named `secrets`.
 ## Running the Code
 
 1.  Navigate to the project's root directory in your terminal.
