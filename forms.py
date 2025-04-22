@@ -14,7 +14,7 @@ SCOPES = [
     'https://www.googleapis.com/auth/forms.responses.readonly',
     'https://www.googleapis.com/auth/gmail.send'
 ]
-FORM_ID = '13GHZUaHBSdxtVfdyGKc6Arw5kj2l97FFbmIbFGqEPDw'  # Replace with your form ID
+FORM_ID = 'YOUR_FORM_ID_HERE'  # Replace with your form ID
 POLL_INTERVAL = 60  # Check for new responses every 60 seconds
 PROCESSED_FILE = 'processed_responses.txt'  # File to track processed responses IDs
 
