@@ -81,9 +81,9 @@ Follow these steps to set up and run the project:
 ## Running the Code
 
 1.  Navigate to the project's root directory in your terminal.
-2.  Run the main script (assuming it's named `main.py` - replace if different):
+2.  Run the main script:
     ```bash
-    python main.py
+    python forms.py
     ```
 3.  **First Run - Google Authentication:**
     *   When you run the script for the first time, it will likely open a web browser window asking you to log in to your Google Account.
